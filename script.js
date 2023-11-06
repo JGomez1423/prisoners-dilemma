@@ -73,7 +73,7 @@ function playRound(playerDecision) {
         result = "Ninguno confió en el otro y ambos traicionaron, nadie gana nada"
     }
 
-    document.getElementById("result").textContent = "Resultado: " + result + " rondas jugadas " +index;
+    document.getElementById("result").textContent = "Resultado: " + result;
     document.getElementById("score").textContent = "Puntaje: " + score;
     document.getElementById("behaviour").textContent = "Comportamiento: " + behaviourString;
     rounds_played++;
