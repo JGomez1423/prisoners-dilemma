@@ -6,19 +6,59 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>Dilema del Prisionero</h1>
-    <div id="game-container">
-        <p>Selecciona tu decisión:</p>
-        <button id="cooperate">Cooperar</button>
-        <button id="betray">Traicionar</button>
-        <p id="result">Resultado: </p>
-        <p id="score">Puntaje: 0</p>
-        <p id="behaviour">Comportamiento: </p>
-    </div>
-    <div id= "endScreen" style="display: none;">
-        <p id="end">Resultado: </p>
-        <button id="playAgain">Jugar de nuevo</button>
-    </div>
-    <script src="script.js"></script>
+        <div id="game-container" class="center">
+            <h1>Dilema del Prisionero</h1>
+            <p>Selecciona tu decisión:</p>
+            <button id="cooperate">Cooperar</button>
+            <button id="betray">Traicionar</button>
+            <p id="result">Resultado: </p>
+            <p id="score">Puntaje: 0</p>
+            <p id="behaviour">Comportamiento: </p>
+        </div>
+        <div id= "endScreen" style="display: none;" class="center">
+            <h1 id="end">Resultado: </h1>
+            <button class="end_button" id="playAgain">Jugar de nuevo</button>
+        </div>
+        <script src="script.js"></script>
 </body>
-</html>
+
+<style>
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    button {
+        margin: 20px;
+        padding: 10px 20px;
+        font-size: 12pxs;
+    }
+
+    .end_button{
+        margin: 20px 45%;
+        padding: 10px 30px;
+        font-size: 12px;
+    }
+
+    #game-container {
+        margin: 20px;
+        padding: 20px;
+        border: 5px solid #ccc;
+        border-radius: 5px;
+        display: inline-block;
+    }
+    #endScreen {
+        margin: 20px;
+        padding: 20px;
+        border: 5px solid #ccc;
+        border-radius: 5px;
+        display: inline-block;
+    }
+
+</style> 
+
+</html>  
